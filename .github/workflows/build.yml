@@ -6,6 +6,7 @@ on:
       - update
   pull_request:
   workflow_dispatch:
+permissions: read-all|write-all
 jobs:
   build:
     strategy:
@@ -53,5 +54,5 @@ jobs:
         #if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: v42.0.4
+          tag_name: v42.0.5
           files: DwarfTherapist-*.*
