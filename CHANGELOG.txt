@@ -1,3 +1,17 @@
+### Version 42.1.0 Patch Notes
+
+***
+ - added memory layouts for 50.10
+ - added support for native Linux versions
+ - fixed activity event id
+ - removed support for Windows versions running in Wine on Linux
+
+### Version 42.0.2 Patch Notes
+
+***
+ - add memory layouts for DF 50.09
+ - fixed cave adaptation misc trait
+
 ### Version 42.0.1 Patch Notes
 
 ***

@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.1.0 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.5.0 FATAL_ERROR)
 project(DwarfTherapist)
 
 set(CMAKE_CXX_STANDARD 14)
@@ -8,7 +8,7 @@ if(CMAKE_COMPILER_IS_GNUCC)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall")
 endif()
 
-set(DT_VERSION "42.0.1")
+set(DT_VERSION "42.1.0")
 if(${DT_VERSION} MATCHES "^([0-9]+)\\.([0-9]+)\\.([0-9]+)(-(.*))?$")
     set(DT_VERSION_MAJOR ${CMAKE_MATCH_1})
     set(DT_VERSION_MINOR ${CMAKE_MATCH_2})
@@ -46,7 +46,7 @@ elseif(UNIX)
         set(MACOSX_BUNDLE_SHORT_VERSION_STRING "${DT_VERSION_MAJOR}.${DT_VERSION_MINOR}.${DT_VERSION_PATCH}")
         set(MACOSX_BUNDLE_BUNDLE_VERSION "${DT_VERSION}")
     else() # Linux
-        set(SOURCES ${SOURCES} src/dfinstancelinux.cpp src/dfinstancewine.cpp)
+        set(SOURCES ${SOURCES} src/dfinstancelinux.cpp)
     endif()
 else()
     message(FATAL_ERROR "unsupported target")
