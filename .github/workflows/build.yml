@@ -54,5 +54,5 @@ jobs:
       - name: Upload package
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: v42.0.3
+          tag_name: 'v42.1.20+'
           files: DwarfTherapist-*.*
